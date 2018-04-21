@@ -1,0 +1,15 @@
+#!/bin/bash
+
+cache="$HOME/.cache/via.cache"
+shortcuts="$HOME/.config/via/shortcuts"
+websites="$HOME/.config/via/websites"
+
+find "$HOME" -mindepth 1 \( -name ".*" -o -path "$HOME/code/*" \) -prune -o -print | sort > "$cache"
+
+sel=$(cat "$websites" "$shortcuts" "$cache" | dmenu -p "via" -i -l 5 )
+
+if [[ "${sel: -1}" == ";" ]]; then
+	sh -c "$sel"
+else
+	vopen "$sel"
+fi
