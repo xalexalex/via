@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cat "$HOME/.config/via/shortcuts"
+cat "$HOME/.config/via/websites"
+find "$HOME" -mindepth 1 \( -name ".*" -o -path "$HOME/code/*" \) -prune -o -print | sort
