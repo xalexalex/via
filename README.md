@@ -20,6 +20,14 @@ Nobody should ever:
 - launch applications (`passmenu;`)
 - run shell commands (`pkill hung;`, `st mutt;`)
 
+# Configuration
+
+`$HOME/.config/via/shortcuts` is a list of applications or quick shell commands. See [shortcuts.example](shortcuts.example) for examples.
+
+`$HOME/.config/via/websites` is a list of websites. See [websites.example](websites.example) for examples.
+
+You can edit the `find` command in the main `via` script to tweak it to your liking. In particular, you should tweak between the `\( — \)` to exclude big folders you don't need indexed. The `find` command shouldn't take more than 100 milliseconds; if it does, take a look at the `separate-cache` branch.
+
 # Installation
 
 It is advisable to bind `via` to a hotkey such as `Alt-Space`.
