@@ -8,6 +8,9 @@ for arg do
 		http*)
 			$BROWSER "$arg" &
 			;;
+		*.txt)
+			$TERMINAL $EDITOR "$arg" &
+			;;
 		*.pdf | *.epub)
 			mupdf "$arg" &
 			;;
