@@ -33,6 +33,7 @@ for arg do
 				inode/directory)
 					cd "$arg"
 					$TERMINAL &
+					cd -
 					;;
 				image/*)
 					sxiv "$arg" &
