@@ -22,11 +22,11 @@ Nobody should ever:
 
 # Configuration
 
-`$HOME/.config/via/shortcuts` is a list of applications or quick shell commands. See [shortcuts.example](shortcuts.example) for examples.
+`via-feed` is a simple script that generates the options and writes them to standard output.
+In its default state, the user can conveniently edit the `shortcuts` and `websites` files, but he is encouraged to edit `via-feed` itself.
+In particular, the `find` command may be tweaked to exclude big folders that shouldn't be indexed.
 
-`$HOME/.config/via/websites` is a list of websites. See [websites.example](websites.example) for examples.
-
-You can edit the `find` command in the main `via` script to tweak it to your liking. In particular, you should tweak between the `\( — \)` to exclude big folders you don't need indexed. The `find` command shouldn't take more than 100 milliseconds; if it does, take a look at the `separate-cache` branch.
+`via-feed` shouldn't take more than 100 milliseconds for best usability; if it does, either try tweaking it to make it faster, or take a look at the `separate-cache` branch.
 
 # Installation
 
