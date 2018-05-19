@@ -2,7 +2,7 @@
 
 exec &> /dev/null
 
-for arg do
+while read arg; do
 	# first try matching by filename or pathname
 	case "${arg,,}" in
 		http*)

@@ -1,5 +1,5 @@
-#!/bin/bash
+#!/bin/sh
 
-sel=$(via-feed | dmenu -p "via" -i -l 5 )
+PATH="$HOME/.config/via:$PATH"
 
-vopen "$sel"
+via-feed | via-menu | via-open

@@ -10,6 +10,14 @@ Nobody should ever:
 - reach for the mouse to open a file or launch an application
 - waste time doing things that should be done by a computer.
 
+# Structure
+
+via is made up of three parts:
+
+- `via-feed` generates a list of menu options
+- `via-menu` interacts with the user
+- `via-open` opens or launches the choice
+
 # Usage
 
 `via` can:
