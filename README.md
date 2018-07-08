@@ -17,8 +17,8 @@ Nobody should ever:
 - open files (`/home/user/file.txt`)
 - open folders (`/home/user/music`)
 - open websites (`https://example.com`)
-- launch applications (`passmenu;`)
-- run shell commands (`pkill hung;`, `st mutt;`)
+- launch applications (`passmenu`)
+- run shell commands (`pkill hung`, `st mutt`)
 
 # Configuration
 

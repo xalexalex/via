@@ -1,4 +1,4 @@
-maim -us | xclip -selection clipboard -t image/png;
-passmenu;
-st mutt;
-st top;
+maim -us | xclip -selection clipboard -t image/png
+passmenu
+st mutt
+st top

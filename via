@@ -2,8 +2,4 @@
 
 sel=$(via-feed | dmenu -p "via" -i -l 5 )
 
-if [[ "${sel: -1}" == ";" ]]; then
-	sh -c "$sel"
-else
-	vopen "$sel"
-fi
+vopen "$sel"
