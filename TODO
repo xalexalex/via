@@ -1,2 +1,2 @@
-In the separate-cache branch, for better user experience, allow for manually rebuilding the cache by simply calling via again while it is running. For example, if via is started with <Alt+Space>, pressing <Alt+Space> again while via-menu is shown will trigger a cache rebuild.
+Allow for manually rebuilding the cache by simply calling via again while it is running. For example, if via is started with <Alt+Space>, pressing <Alt+Space> again while via-menu is shown will trigger a cache rebuild.
 One way to do this is to check, at startup, if another via-menu is running. If it is, kill it, rebuild the cache and then go on.
