@@ -41,8 +41,6 @@ However, `via` is a concept and as such it is implementation-independent.
 In its default state, the user can conveniently edit the `shortcuts` and `websites` files, but he is encouraged to edit `via-feed` itself.
 In particular, the `find` command may be tweaked to exclude big folders that shouldn't be indexed (such as hidden folders and source code directories).
 
-`via-feed` shouldn't take more than 100 milliseconds for best usability; if it does, either try tweaking it to make it faster, or take a look at the `separate-cache` branch.
-
 ## via-menu
 
 `via-menu` is a simple script that reads options on standard input and outputs the choice(s) to standard output, separated by newlines.
