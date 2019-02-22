@@ -2,4 +2,14 @@
 
 PATH="$HOME/.config/via:$PATH"
 
-via-feed | via-menu | via-open
+case "$1" in
+	-r)
+		via-feed -r | via-menu | via-open
+		;;
+	-ro)
+		via-feed -r >/dev/null
+		;;
+	*)
+		via-feed | via-menu | via-open
+		;;
+esac

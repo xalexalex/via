@@ -2,7 +2,7 @@
 
 cache="$HOME/.cache/via"
 
-if [[ "$REBUILD" = y ]] || [[ ! -e "$cache" ]]; then
+if [[ "$1" == "-r" ]] || [[ ! -e "$cache" ]]; then
 	cat "$HOME/.config/via/shortcuts" > "$cache"
 	cat "$HOME/.config/via/websites" >> "$cache"
 	find "$HOME" -mindepth 1 \( -name ".*" -o -path "$HOME/code/*" \) -prune -o -print | sort >> "$cache"
