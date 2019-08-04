@@ -3,10 +3,10 @@
 PATH="$HOME/.config/via:$PATH"
 
 case "$1" in
-	-r)
+	-r)  # rebuild cache first
 		via-feed -r | via-menu | via-open
 		;;
-	-ro)
+	-ro) # rebuild cache only
 		via-feed -r >/dev/null
 		;;
 	*)
