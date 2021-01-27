@@ -8,4 +8,5 @@ if [[ "$1" == "-r" ]] || [[ ! -e "$cache" ]]; then
 	find "$HOME" -mindepth 1 \( -name ".*" -o -path "$HOME/code/*" \) -prune -o -print | sort >> "$cache"
 fi
 
+wmctrl -xl | sed "s/^[^.]*\.//;s/ \+\S\+ \+/ /;s/^/w /;s/ \+/ /g"
 cat "$cache"

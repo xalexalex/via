@@ -5,6 +5,10 @@ exec &> /dev/null
 while read arg; do
 	# first try matching by filename or pathname
 	case "${arg,,}" in
+		w\ *)
+			target=$(echo "$arg"|cut -d ' ' -f 3-)
+			wmctrl -a "$target"
+			;;
 		http*)
 			$BROWSER "$arg" &
 			;;

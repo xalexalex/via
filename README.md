@@ -10,6 +10,7 @@ Nobody should ever:
 
 - browse folders searching for a file;
 - search for the application to open in a launcher;
+- search for an open window to switch to;
 - reach for the mouse to open a file or launch an application;
 - waste time doing things that can be done instantly by a computer.
 
@@ -22,6 +23,7 @@ If you have a document at `~/docs/work/drafts/letter.odt` you should _not_ hunt 
 - open files (`/home/user/file.txt`);
 - open folders (`/home/user/music`);
 - open websites (`https://example.com`);
+- switch to an open window/app;
 - search the web (`https://duckduckgo.com/?q=`, `https://en.wikipedia.org/wiki/Special:Search?search=`);
 - launch applications (`passmenu`, `gimp`, `st mutt`);
 - run shell commands (`pkill hung`).
@@ -66,4 +68,5 @@ By default, `dmenu` is used. However, you can use `fzf`, `rofi`, or even a combi
 - opens URLs in your favorite browser;
 - opens files according to extension or mimetype, as specified in `via-open` itself;
 - opens folders in your file manager;
+- switches to open windows;
 - runs shell commands.
