@@ -2,7 +2,7 @@
 
 exec &> /dev/null
 
-while read arg; do
+while read -r arg; do
 	# first try matching by filename or pathname
 	case "${arg,,}" in
 		w\ *)
